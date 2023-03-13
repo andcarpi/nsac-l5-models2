@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "andcarpi/nsac-l5-models",
+    "description": "Models para acessar Banco de Dados no NSac Online Laravel 5",
     "keywords": [
-        ":vendor_name",
+        "andcarpi",
         "laravel",
-        ":package_slug"
+        "nsac-l5-models"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/andcarpi/nsac-l5-models",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "andcarpi",
+            "email": "kustelac@yahoo.com.br",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Andcarpi\\NsacL5Models\\": "src",
+            "Andcarpi\\NsacL5Models\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Andcarpi\\NsacL5Models\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Andcarpi\\NsacL5Models\\NsacL5ModelsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "NsacL5Models": "Andcarpi\\NsacL5Models\\Facades\\NsacL5Models"
             }
         }
     },
