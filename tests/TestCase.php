@@ -2,9 +2,9 @@
 
 namespace Andcarpi\NsacL5Models\Tests;
 
+use Andcarpi\NsacL5Models\NsacL5ModelsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Andcarpi\NsacL5Models\NsacL5ModelsServiceProvider;
 
 class TestCase extends Orchestra
 {
