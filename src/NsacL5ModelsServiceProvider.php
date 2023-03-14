@@ -2,9 +2,9 @@
 
 namespace Andcarpi\NsacL5Models;
 
+use Andcarpi\NsacL5Models\Commands\NsacL5ModelsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Andcarpi\NsacL5Models\Commands\NsacL5ModelsCommand;
 
 class NsacL5ModelsServiceProvider extends PackageServiceProvider
 {
