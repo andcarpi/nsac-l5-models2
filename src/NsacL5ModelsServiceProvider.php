@@ -21,5 +21,8 @@ class NsacL5ModelsServiceProvider extends PackageServiceProvider
             ->hasViews()
             ->hasMigration('create_nsac-l5-models_table')
             ->hasCommand(NsacL5ModelsCommand::class);
+
+        $this->app['config']->set('database.connections.NSacL5', config('nsac-l5-models.Connection.Info'));
+
     }
 }
