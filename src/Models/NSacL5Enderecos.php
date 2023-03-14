@@ -9,5 +9,4 @@ class NSacL5Enderecos extends Model
     protected $connection = 'NSacL5';
 
     protected $table = 'alunos.endereco';
-
 }

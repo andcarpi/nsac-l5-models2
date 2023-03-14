@@ -19,6 +19,6 @@ return [
             'prefix_indexes' => true,
             'search_path' => 'public',
             'sslmode' => 'prefer',
-        ]
+        ],
     ],
 ];

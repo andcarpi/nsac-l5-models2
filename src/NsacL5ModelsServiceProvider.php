@@ -23,6 +23,5 @@ class NsacL5ModelsServiceProvider extends PackageServiceProvider
             ->hasCommand(NsacL5ModelsCommand::class);
 
         $this->app['config']->set('database.connections.NSacL5', config('nsac-l5-models.Connection.Info'));
-
     }
 }
