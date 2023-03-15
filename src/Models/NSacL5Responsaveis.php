@@ -2,11 +2,8 @@
 
 namespace Andcarpi\NsacL5Models\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
-class NSacL5Responsaveis extends Model
+class NSacL5Responsaveis extends BaseModel
 {
-    protected $connection = 'NSacL5';
 
     protected $table = 'alunos.responsaveis';
 }
