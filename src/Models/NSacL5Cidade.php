@@ -6,7 +6,8 @@ class NSacL5Cidade extends BaseModel
 {
     protected $table = 'public.cidades';
 
-    public function estado() {
+    public function estado()
+    {
         return $this->belongsTo(NSacL5Estado::class, 'estado', 'codigo');
     }
 }

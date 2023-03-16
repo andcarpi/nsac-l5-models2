@@ -2,8 +2,6 @@
 
 namespace Andcarpi\NsacL5Models\Models;
 
-use function PHPUnit\Framework\isEmpty;
-
 class NSacL5Aluno extends BaseModel
 {
     protected $table = 'alunos.dados';
@@ -29,7 +27,8 @@ class NSacL5Aluno extends BaseModel
         return $this->hasOne(NSacL5Endereco::class, 'codigo', 'dono');
     }
 
-    public function hasCPF():bool {
+    public function hasCPF(): bool
+    {
         return ! empty(trim($this->cpf));
     }
 }
