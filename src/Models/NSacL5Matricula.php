@@ -6,7 +6,8 @@ class NSacL5Matricula extends BaseModel
 {
     protected $table = 'alunos.matriculas';
 
-    public function turma() {
+    public function turma()
+    {
         return $this->belongsTo(NSacL5Turma::class, 'turma', 'codigo');
     }
 }

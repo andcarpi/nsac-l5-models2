@@ -12,6 +12,7 @@ class NSacL5Atraso extends BaseModel
     {
         $timestamp = Carbon::createFromDate($this->data);
         $timestamp->setTimeFromTimeString($this->hora);
+
         return $timestamp;
     }
 }
