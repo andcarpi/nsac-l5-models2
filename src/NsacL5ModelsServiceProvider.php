@@ -17,10 +17,10 @@ class NsacL5ModelsServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('nsac-l5-models')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_nsac-l5-models_table')
-            ->hasCommand(NsacL5ModelsCommand::class);
+            ->hasConfigFile();
+            //->hasViews()
+            //->hasMigration('create_inconformidades_table')
+            //->hasCommand(NsacL5ModelsCommand::class);
 
         $this->app['config']->set('database.connections.'.config('nsac-l5-models.Connection.Name'), config('nsac-l5-models.Connection.Info'));
     }
