@@ -27,6 +27,16 @@ class NSacL5Aluno extends BaseModel
         return $this->hasOne(NSacL5Endereco::class, 'codigo', 'dono');
     }
 
+    public function atrasos()
+    {
+        return $this->hasMany(NSacL5Atraso::class, 'aluno', 'matricula');
+    }
+
+    public function saidas()
+    {
+        return $this->hasMany(NSacL5Saida::class, 'aluno', 'matricula');
+    }
+
     public function hasCPF(): bool
     {
         return ! empty(trim($this->cpf));
