@@ -22,7 +22,7 @@ class NSacL5Aluno extends BaseModel
         return $this->hasMany(NSacL5Telefone::class, 'dono', 'matricula');
     }
 
-    public function endereco()
+    public function enderecos()
     {
         return $this->hasOne(NSacL5Endereco::class, 'codigo', 'dono');
     }
