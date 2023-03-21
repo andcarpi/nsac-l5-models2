@@ -24,7 +24,7 @@ class NSacL5Aluno extends BaseModel
 
     public function enderecos()
     {
-        return $this->hasOne(NSacL5Endereco::class, 'codigo', 'dono');
+        return $this->hasOne(NSacL5Endereco::class, 'codigo', 'endereco');
     }
 
     public function atrasos()

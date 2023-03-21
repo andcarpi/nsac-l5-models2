@@ -6,7 +6,7 @@ class NSacL5Endereco extends BaseModel
 {
     protected $table = 'alunos.endereco';
 
-    public function cidade()
+    public function cidades()
     {
         return $this->belongsTo(NSacL5Cidade::class, 'cidade', 'codigo');
     }
